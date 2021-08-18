@@ -22,7 +22,7 @@ jobs:
         pip install -r requirements.txt
 
     - name: Coverage report
-      run: |
+      run:  |
         pip3 install coverage
         coverage run mysite_rebrand/manage.py test
         coverage report
